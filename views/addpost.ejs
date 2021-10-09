@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Post</title>
+    <style>
+        .posthead{
+            font-size: 30px;
+            color:orange;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            text-align: center;
+            padding:10px;
+            margin:10px;
+            border:1px solid black;
+            border-radius:20px;
+        }
+        .addpost{
+            display:flex;
+            flex-direction: column;
+            width:80%;
+            margin:auto;
+            border:1px solid black;
+            border-radius:20px;
+        }
+        .addpost *{
+            margin:15px;
+        }
+        .addpost button{
+            background-color: coral;
+            color:white;
+        }
+    </style>
+</head>
+<body>
+    <div class="posthead">ADD POST</div>
+    <form class="addpost" action="/post/addpost" method="POST">
+        <textarea type="text" name="title" placeholder="Enter Title"></textarea>
+        <textarea type="text" name="description" placeholder="Enter Description"></textarea>
+        <textarea type="text" name="left" placeholder="Enter Left"></textarea>
+        <textarea type="text" name="right" placeholder="Enter Right"></textarea>
+        <input type="text" name="design" placeholder="Enter Design" required>
+        <button>Add Post</button>
+    </form>
+</body>
+</html>

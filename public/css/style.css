@@ -1,0 +1,17 @@
+.editpost{
+    background-color: antiquewhite;
+    margin:20px;
+    padding:10px;
+}
+.editpost .inpost{
+    margin:20px;
+    border:2px solid black;
+    background-color: white;
+}
+.editpostform{
+    display:flex;
+    flex-direction: column;
+}
+.editpostform *{
+    margin:15px;
+}
